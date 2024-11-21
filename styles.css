@@ -1,0 +1,97 @@
+/* Reset and Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #23252C;
+    color: #fff;
+    text-align: center;
+}
+
+.card-section {
+    padding: 2rem 0;
+}
+
+.card-title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.flipping-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Profile Card */
+.profile-card {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.profile-card-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: transform 0.8s ease;
+}
+
+.profile-card-front {
+    background-color: #ccc;
+    transform: rotateY(180deg);
+}
+
+.profile-card-back {
+    background-color: #1A1B21;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.flipped .profile-card-front {
+    transform: rotateY(0);
+}
+
+.flipped .profile-card-back {
+    transform: rotateY(180deg);
+}
+
+/* Buttons */
+.action-btn {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.action-btn:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+    display: none;
+}
+
+audio {
+    margin-top: 1rem;
+}

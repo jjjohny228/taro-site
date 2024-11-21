@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipping Cards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="card-section">
+        <h1 class="card-title">Guess Your Fate</h1>
+        <div class="flipping-cards">
+            <div class="profile-card">
+                <div class="profile-card-face profile-card-back">
+                    <img src="resource/Back.gif" alt="Card Back" class="card-image">
+                </div>
+                <div class="profile-card-face profile-card-front">
+                    <img src="resource/Cups07.gif" alt="Card Front" class="card-image">
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-card-face profile-card-front">
+                    <img src="resource/Cups10.gif" alt="Card Front" class="card-image">
+                </div>
+                <div class="profile-card-face profile-card-back">
+                    <img src="resource/Back.gif" alt="Card Back" class="card-image">
+                </div>
+            </div>
+
+            <div class="profile-card">
+                <div class="profile-card-face profile-card-front">
+                    <img src="resource/Moon.gif" alt="Card Front" class="card-image">
+                </div>
+                <div class="profile-card-face profile-card-back">
+                    <img src="resource/Back.gif" alt="Card Back" class="card-image">
+                </div>
+            </div>
+        </div>
+        <button id="guess-btn" class="action-btn">Guess</button>
+        <div id="extra-buttons" class="hidden">
+            <button id="play-again-btn" class="action-btn">Play Again</button>
+            <audio controls>
+                <source src="resource/natasha.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
